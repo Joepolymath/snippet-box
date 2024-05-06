@@ -13,7 +13,7 @@ vet: fmt
 .PHONY:vet
 
 build: vet
-	go build -o app
+	go build -o app ./cmd/web
 .PHONY:build
 
 run: build
